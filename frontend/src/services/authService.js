@@ -5,7 +5,7 @@ import axios from 'axios';
 // If you've set up a proxy in vite.config.js (e.g., for /api),
 // you can just use relative paths like '/api/auth/login'.
 // Otherwise, you'd use the full backend URL e.g., 'http://localhost:5001/api/auth'
-const API_BASE_URL = '/api/auth'; // Assuming Vite proxy is set up for /api
+const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api/auth`;; // Assuming Vite proxy is set up for /api
 
 /**
  * Registers a new user.

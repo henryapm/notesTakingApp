@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // The base URL for our API.
 // Assuming Vite proxy is set up for /api in vite.config.js
-const API_BASE_URL = '/api/notes';
+const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api/notes`;
 
 // Helper function to create the authorization header
 const getConfig = (token) => {
