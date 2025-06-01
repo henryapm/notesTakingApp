@@ -7,8 +7,6 @@ import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import noteRoutes from './routes/noteRoutes.js';
 
-app.use(cors(corsOptions)); // <--- UPDATE THIS LINE
-// Load environment variables from .env file
 dotenv.config();
 
 // Initialize Express app
