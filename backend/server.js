@@ -6,7 +6,6 @@ import connectDB from './config/db.js';
 // Import API routes
 import authRoutes from './routes/authRoutes.js';
 import noteRoutes from './routes/noteRoutes.js';
-import cors from 'cors';
 
 app.use(cors(corsOptions)); // <--- UPDATE THIS LINE
 // Load environment variables from .env file
